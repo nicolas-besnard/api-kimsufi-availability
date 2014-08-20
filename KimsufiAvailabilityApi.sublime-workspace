@@ -520,21 +520,26 @@
 	"buffers":
 	[
 		{
-			"file": "Gemfile",
+			"file": "app/models/user.rb",
 			"settings":
 			{
-				"buffer_size": 1389,
+				"buffer_size": 36,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "class CreateUsers < ActiveRecord::Migration\n	def change\n		create_table :users do |t|\n			t.token :string, limit: 255\n			t.\n			t.timestamps\n		end\n	end\nend\n",
-			"file": "db/migrate/20140815181919_create_users.rb",
-			"file_size": 147,
-			"file_write_time": 130526003900000000,
+			"file": "app/controllers/api/user_controller.rb",
 			"settings":
 			{
-				"buffer_size": 153,
+				"buffer_size": 1134,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1743,
 				"line_ending": "Unix"
 			}
 		}
@@ -663,6 +668,24 @@
 	},
 	"file_history":
 	[
+		"/Users/nicolas/Documents/development/Ruby/KimsufiAvailabilityApi/config/initializers/wrap_parameters.rb",
+		"/Users/nicolas/Documents/development/Ruby/KimsufiAvailabilityApi/config/application.yml",
+		"/Users/nicolas/Documents/development/Ruby/KimsufiAvailabilityApi/config/application.rb",
+		"/Users/nicolas/Documents/development/Ruby/KimsufiAvailabilityApi/Gemfile",
+		"/Users/nicolas/Documents/development/Ruby/KimsufiAvailabilityApi/db/schema.rb",
+		"/Users/nicolas/Documents/development/Ruby/KimsufiAvailabilityApi/db/seeds.rb",
+		"/Users/nicolas/Documents/development/Ruby/KimsufiAvailabilityApi/config/environments/development.rb",
+		"/Users/nicolas/Documents/development/Ruby/KimsufiAvailabilityApi/config/database.yml",
+		"/Users/nicolas/Documents/development/Ruby/KimsufiAvailabilityApi/app/models/user.rb",
+		"/Users/nicolas/Documents/development/Ruby/KimsufiAvailabilityApi/app/controllers/application_controller.rb",
+		"/Users/nicolas/Documents/development/Ruby/KimsufiAvailabilityApi/app/controllers/api/kimsufi_controller.rb",
+		"/Users/nicolas/Documents/development/Ruby/KimsufiAvailabilityApi/KimsufiAvailabilityApi.sublime-project",
+		"/Users/nicolas/Documents/development/Ruby/KimsufiAvailabilityApi/db/migrate/20140815181919_create_users.rb",
+		"/Users/nicolas/Documents/development/Ruby/KimsufiAvailabilityApi/app/views/home/index.html.erb",
+		"/Users/nicolas/Documents/development/Ruby/KimsufiAvailabilityApi/app/controllers/home_controller.rb",
+		"/Users/nicolas/Documents/development/Ruby/KimsufiAvailabilityApi/config/routes.rb",
+		"/Users/nicolas/Documents/development/Ruby/KimsufiAvailabilityApi/curl.sh",
+		"/Users/nicolas/Documents/development/Ruby/KimsufiAvailabilityApi/config.ru",
 		"/Users/nicolas/Documents/development/Ruby/playme-api-v2/app/models/user.rb",
 		"/Users/nicolas/Documents/development/Ruby/playme-api-v2/app/controllers/api/v2/questions_controller.rb",
 		"/Users/nicolas/Documents/development/Ruby/playme-api-v2/app/models/question.rb",
@@ -772,25 +795,7 @@
 		"/Users/nicolas/Documents/development/playme-api-v2/app/helpers/api/v2/users/colleagues_helper.rb",
 		"/Users/nicolas/Documents/development/playme-api-v2/app/uploaders/user_photo_uploader.rb",
 		"/Users/nicolas/Documents/development/playme-api-v2/test/fixtures/users.yml",
-		"/Users/nicolas/Documents/development/playme-api-v2/app/models/push.rb",
-		"/Users/nicolas/js.js",
-		"/Users/nicolas/osx-kimsufi-availability/ruby/samples/ks_1_not_available.json",
-		"/Users/nicolas/osx-kimsufi-availability/ruby/samples/ks_1_available.json",
-		"/Users/nicolas/ks.rb",
-		"/Users/nicolas/output.html",
-		"/Users/nicolas/Documents/development/playme-api-v2/lib/constant.rb",
-		"/Users/nicolas/Documents/development/playme-api-v2/app/controllers/api/v2/shop_controller.rb",
-		"/Users/nicolas/Documents/development/playme-api-v2/lib/issues_creator.rb",
-		"/Users/nicolas/Documents/development/playme-api-v2/app/controllers/api/v2/tmp_controller.rb",
-		"/Users/nicolas/ks_original",
-		"/Users/nicolas/ks_new",
-		"/Users/nicolas/Documents/development/playme-api-v2/app/models/inventory.rb",
-		"/Users/nicolas/Documents/development/playme-api-v2/app/views/api/v2/users/show.json.rabl",
-		"/Users/nicolas/Documents/development/playme-api-v2/app/helpers/api/v2/users/inventory_helper.rb",
-		"/Users/nicolas/Documents/development/playme-api-v2/lib/tasks/users:photos.rake",
-		"/Users/nicolas/Documents/development/playme-api-v2/app/controllers/api/v2/photos_controller.rb",
-		"/Users/nicolas/Documents/development/playme-api-v2/config/application.yml",
-		"/Users/nicolas/Documents/development/playme-api-v2/db/migrate/20140507110927_change_string_to_text_for_details_in_orders.rb"
+		"/Users/nicolas/Documents/development/playme-api-v2/app/models/push.rb"
 	],
 	"find":
 	{
@@ -963,19 +968,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Gemfile",
+					"file": "app/models/user.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1389,
+						"buffer_size": 36,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1099,
-								1099
+								32,
+								32
 							]
 						],
 						"settings":
@@ -1086,145 +1091,279 @@
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
 							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/controllers/api/user_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1134,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								175,
+								175
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 112.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "config/routes.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1743,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								185,
+								185
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "db/migrate/20140815181919_create_users.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 153,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								121,
-								121
-							]
-						],
-						"settings":
-						{
-							"apply_syntax_touched": true,
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1289,8 +1428,40 @@
 		"selected_items":
 		[
 			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"usercon",
+				"app/controllers/api/user_controller.rb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"applicon",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"kimsu",
+				"app/controllers/api/kimsufi_controller.rb"
+			],
+			[
+				"curl",
+				"curl.sh"
+			],
+			[
+				"seed",
+				"db/seeds.rb"
+			],
+			[
 				"gem",
 				"Gemfile"
+			],
+			[
+				"data",
+				"config/database.yml"
 			],
 			[
 				"question",
@@ -1299,10 +1470,6 @@
 			[
 				"questioncon",
 				"app/controllers/api/v2/questions_controller.rb"
-			],
-			[
-				"user",
-				"app/models/user.rb"
 			],
 			[
 				"constant",
@@ -1327,10 +1494,6 @@
 			[
 				"userpho",
 				"app/models/user_photo.rb"
-			],
-			[
-				"applicon",
-				"app/controllers/api/v2/application_controller.rb"
 			],
 			[
 				"applir",
@@ -1371,14 +1534,6 @@
 			[
 				"gamescon",
 				"app/controllers/api/v2/games_controller.rb"
-			],
-			[
-				"route",
-				"config/routes.rb"
-			],
-			[
-				"usercon",
-				"app/controllers/api/v2/users_controller.rb"
 			],
 			[
 				"inve",
@@ -1505,10 +1660,6 @@
 				"public/get_testers/index.html"
 			],
 			[
-				"seed",
-				"db/seeds.rb"
-			],
-			[
 				"applo",
 				"config/application.rb"
 			],
@@ -1555,10 +1706,6 @@
 			[
 				"appli",
 				"config/application.rb"
-			],
-			[
-				"data",
-				"config/database.yml"
 			],
 			[
 				"sceh",
@@ -1791,14 +1938,6 @@
 			[
 				"contactno",
 				"app/notifications/contact_notification.rb"
-			],
-			[
-				"modelb",
-				"lib/notification/model_base.rb"
-			],
-			[
-				"pu",
-				"app/models/push.rb"
 			]
 		],
 		"width": 0.0
