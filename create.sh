@@ -1,0 +1,1 @@
+curl -XPOST -H 'Content-Type: application/json' http://localhost:3000/users -d '{ "user": { "token": '$1' } }'

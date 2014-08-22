@@ -1,0 +1,1 @@
+curl -XGET  -H 'Content-Type: application/json' -H 'Authorization: Token token='$1'' http://localhost:3000/users -d '{ "user": { "token": '$1' } }'

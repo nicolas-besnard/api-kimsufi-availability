@@ -6,4 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+%w{users}.each do |table_name|
+	ActiveRecord::Base.connection.execute("TRUNCATE TABLE #{table_name}")
+end
+
 User.create!(token: 1)

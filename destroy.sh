@@ -1,0 +1,1 @@
+curl -XDELETE  -H 'Content-Type: application/json' -H 'Authorization: Token token='$1'' http://localhost:3000/users/$1
